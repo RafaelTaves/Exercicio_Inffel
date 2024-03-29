@@ -12,11 +12,11 @@ def zerar_tabela():
 
 
 def inserir_dado_generico():
-    cursor.execute("INSERT INTO clientes VALUES ('Rafael', '400289922', 'rafael@gmail.com', '20765057760')")
+    cursor.execute("INSERT INTO clientes VALUES ('Rafael', '940028922', 'rafael@gmail.com', '20713952760')")
     conexao.commit()
-    cursor.execute("INSERT INTO clientes VALUES ('Carol', '200489922', 'carol@gmail.com', '20045057760')")
+    cursor.execute("INSERT INTO clientes VALUES ('Carol', '920048922', 'carol@gmail.com', '20045057760')")
     conexao.commit()
-    cursor.execute("INSERT INTO clientes VALUES ('Miguel', '200589922', 'rafael@gmail.com', '20055057760')")
+    cursor.execute("INSERT INTO clientes VALUES ('Miguel', '920058922', 'Miguel@gmail.com', '20055057760')")
     conexao.commit()
 
 
