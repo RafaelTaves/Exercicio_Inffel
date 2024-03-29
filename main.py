@@ -7,6 +7,10 @@ conexao = sqlite3.connect('banco.db')
 # Definindo objeto cursor para executar comando em SQL através do python
 cursor = conexao.cursor()
 
+# Zerando tabela
+comandoLimparTabela = "DELETE FROM clientes"
+cursor.execute(comandoLimparTabela)
+
 # Inserindo valores genéricos na tabela
 cursor.execute("INSERT INTO clientes VALUES ('Rafael', '400289922', 'rafael@gmail.com', '20765057760')")
 conexao.commit()
@@ -30,8 +34,6 @@ else:
     # Salvando os dados em um arquivo JSON
     with open('clientes.json', 'w') as arquivo_json:
         json.dump(cliente_dict, arquivo_json, indent=4)
-
-print(cliente)
 
 # Fechando a conexão com o banco de dados
 cursor.close()
